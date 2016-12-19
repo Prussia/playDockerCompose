@@ -6,7 +6,7 @@ services:
     ports:
      - "5000:5000"
     volumes:
-     - /DATA/tomcat/brigde:/
+     - /DATA/tomcat/brigde:/brigde
     links:
     - redis
   redis:
