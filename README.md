@@ -6,3 +6,6 @@
 	- [Overview of Docker Compose](https://docs.docker.com/compose/overview/)
  	- [Compose file reference](https://docs.docker.com/compose/compose-file/)
 
+RUN docker-compose up
+	docker-compose ps
+	docker-compose stop/rm
