@@ -14,6 +14,7 @@ services:
     image: tomcat:jre8
     ports:
       - "8180:8080"
+    volumes:
       - /DATA/tomcat/brigde:/brigde
   redis:
     image: redis:3
