@@ -6,12 +6,18 @@ services:
     ports:
       - "8180:8080"
     volumes:
-      - /DATA/tomcat/brigde:/brigde
+      - /DATA/nginx/brigde:/brigde
     links:
       - redis
+      - tomcat
+  tomcat:
+    image: tomcat:jre8
+    ports:
+      - "8180:8080"
+      - /DATA/tomcat/brigde:/brigde
   redis:
     image: redis:3
     ports:
       - "6400:6379"
     volumes:
-      - /DATA/tomcat/brigde:/brigde
+      - /DATA/redis/brigde:/brigde
