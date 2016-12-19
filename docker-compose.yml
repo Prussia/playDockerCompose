@@ -9,7 +9,7 @@ services:
      - NGINX_PORT=80
     volumes:
       - /DATA/nginx/brigde:/brigde
-    command: /bin/bash -c "envsubst < /etc/nginx/conf.d/mysite.template > /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"
+    command: /bin/bash -c "echo $PATH"
     links:
       - redis
       - tomcat
