@@ -4,8 +4,8 @@ services:
   web:
     build: .
     ports:
-     - "5000:5000"
+     - "8180:8080"
     volumes:
-     - .:/code
+     - /DATA/tomcat/brigde:/brigde
   redis:
-    image: redis
+    image: prussia2016/tomcat8
