@@ -1,13 +1,17 @@
 version: '2'
 
 services:
-  web:
+  example:
     build: .
     ports:
-     - "5000:5000"
+      - "6180:6379"
+      - "8180:8080"
     volumes:
-     - /DATA/tomcat/brigde:/brigde
+      - /DATA/tomcat/brigde:/brigde
     links:
-    - redis
+      - redis
+      - tomcat
   redis:
     image: redis
+  tomcat: 
+    image: tomcat:jre8
