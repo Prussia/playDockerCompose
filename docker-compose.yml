@@ -2,16 +2,14 @@ version: '2'
 
 services:
   example:
-    build: .
+    image: dockercompose:sample
     ports:
-      - "6180:6379"
       - "8180:8080"
     volumes:
       - /DATA/tomcat/brigde:/brigde
     links:
       - redis
-      - tomcat
   redis:
     image: redis
-  tomcat: 
-    image: tomcat:jre8
+    ports:
+      - "6400:6379"
