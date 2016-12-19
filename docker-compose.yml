@@ -2,7 +2,7 @@ version: '2'
 
 services:
   example:
-    image: ngix:1.11
+    image: nginx:1.11
     ports:
       - "8180:8080"
     volumes:
@@ -10,6 +10,8 @@ services:
     links:
       - redis
   redis:
-    image: redis
+    image: redis:3
     ports:
       - "6400:6379"
+    volumes:
+      - /DATA/tomcat/brigde:/brigde
