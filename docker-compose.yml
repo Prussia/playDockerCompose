@@ -7,5 +7,9 @@ services:
      - "8180:8080"
     volumes:
      - /DATA/tomcat/brigde:/brigde
+    links:
+     - redis
   redis:
-    image: prussia2016/tomcat8
+    image: redis
+volumes:
+  logvolume01: {}
