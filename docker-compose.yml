@@ -6,7 +6,7 @@ services:
     ports:
       - "8180:8080"
     volumes:
-      - /DATA/tomcat/brigde:/brigde
+      - /DATA/tomcat/bridge:/bridge
   # nginx:
   #   image: nginx:1.11
   #   ports:
