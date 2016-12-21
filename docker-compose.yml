@@ -14,8 +14,6 @@ services:
     links:
       - redis
       - tomcat
-      - mysql
-      - wordpress
   tomcat:
     image: tomcat:jre8
     restart: always
