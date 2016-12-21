@@ -12,8 +12,6 @@ services:
     command: /bin/bash -c "echo $PATH"
     links:
       - tomcat
-      - mysql
-      - redis
   tomcat:
     image: tomcat:jre8
     restart: always
@@ -21,6 +19,9 @@ services:
       - "8280:8080"
     volumes:
       - /DATA/blacktea/tomcat/bridge:/bridge
+    depends_on:
+       - mysql
+       - redis
   mysql:
     image: mysql:8
     restart: always
