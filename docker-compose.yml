@@ -1,6 +1,21 @@
 version: '2'
 
 services:
+  nginx:
+    image: nginx:1.11
+    restart: always
+    ports:
+      - "8080:80"
+    environment:
+     - NGINX_PORT=80
+    volumes:
+      - /DATA/nginx/brigde:/brigde
+    command: /bin/bash -c "echo $PATH"
+    links:
+      - redis
+      - tomcat
+      - mysql
+      - wordpress
   tomcat:
     image: tomcat:jre8
     restart: always
@@ -8,30 +23,11 @@ services:
       - "8180:8080"
     volumes:
       - /DATA/tomcat/bridge:/bridge
-  # nginx:
-  #   image: nginx:1.11
-  #   ports:
-  #     - "8080:80"
-  #   environment:
-  #    - NGINX_PORT=80
-  #   volumes:
-  #     - /DATA/nginx/brigde:/brigde
-  #   command: /bin/bash -c "echo $PATH"
-  #   links:
-  #     - redis
-  #     - tomcat
-  #     - mysql
-  #     - wordpress
-  # tomcat:
-  #   image: tomcat:jre8
-  #   ports:
-  #     - "8180:8080"
-  #   volumes:
-  #     - /DATA/tomcat/brigde:/brigde
-  # redis:
-  #   image: redis:3
-  #   ports:
-  #     - "6400:6379"
-  #   volumes:
-  #     - /DATA/redis/brigde:/brigde
+  redis:
+    image: redis:3
+    restart: always
+    ports:
+      - "6400:6379"
+    volumes:
+      - /DATA/redis/brigde:/brigde
   
