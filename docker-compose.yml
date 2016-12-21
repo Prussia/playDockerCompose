@@ -5,7 +5,7 @@ services:
     image: tomcat:jre8
     restart: always
     ports:
-      - "7180:8080"
+      - "8180:8080"
     volumes:
       - /DATA/tomcat/bridge:/bridge
   # nginx:
