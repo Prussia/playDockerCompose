@@ -20,7 +20,7 @@ services:
     image: tomcat:jre8
     restart: always
     ports:
-      - "8180:8080"
+      - "8280:8080"
     volumes:
       - /DATA/tomcat/bridge:/bridge
   redis:
