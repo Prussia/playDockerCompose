@@ -16,12 +16,14 @@ services:
       - redis
   tomcat:
     image: tomcat:jre8
+    restart: always
     ports:
       - "8280:8080"
     volumes:
       - /DATA/blacktea/tomcat/bridge:/bridge
   mysql:
     image: mysql:8
+    restart: always
     volumes:
        - /DATA/blacktea/mysql/db_data:/var/lib/mysql
     restart: always
