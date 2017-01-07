@@ -22,4 +22,9 @@
 	$ docker-compose ps
 	$ docker-compose stop
 	$ docker-compose rm
+
+##**[docker cp](https://docs.docker.com/engine/reference/commandline/cp/)**
+
+	Usage:  docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH|-
+        	docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH 
 	
