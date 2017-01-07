@@ -15,7 +15,6 @@
 #**Docker UI**
 	- [Portainer](http://strl099020:9000/#/) - UI for Docker and better management
 
-
 ##**Command**
 	
 	$ docker-compose up -d
