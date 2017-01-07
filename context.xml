@@ -37,7 +37,7 @@
          username="playSpring"
          password="playSpring"
          driverClassName="com.mysql.jdbc.Driver"
-         url="jdbc:mysql://54.238.176.106:3400/playSpring?useUnicode=true&characterEncoding=utf8"
+         url="jdbc:mysql://54.238.176.106:3400/playSpring?useUnicode=true&characterEncoding=utf8;"
          maxTotal="10"
          maxIdle="5"
          defaultTransactionIsolation="READ_COMMITTED"
