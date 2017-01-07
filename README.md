@@ -8,13 +8,13 @@
 	$ chmod +x /usr/local/bin/docker-compose
 
 #**[Docker/Compose](https://github.com/docker/compose)**
-* [Overview of Docker Compose](https://docs.docker.com/compose/overview/)
-* [Compose file reference](https://docs.docker.com/compose/compose-file/)
+
+	- [Overview of Docker Compose](https://docs.docker.com/compose/overview/)
+	- [Compose file reference](https://docs.docker.com/compose/compose-file/)
 
 
 #**Docker UI**
-* [Portainer](http://portainer.io/) - UI for Docker and better management
-
+	- [Portainer](http://strl099020:9000/#/) - UI for Docker and better management
 
 ##**Command**
 	Usage:  docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH|-
