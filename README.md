@@ -20,8 +20,8 @@
 	Usage:  docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH|-
         	docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH
 	
-	$ docker cp playDockerCompose_tomcat_1:/usr/local/tomcat/conf/tomcat-users.xml ./
-	$ docker cp ./tomcat-users.xml playDockerCompose_tomcat_1:/usr/local/tomcat/conf/	
+	$ docker cp playSpring_tomcat_1:/usr/local/tomcat/conf/tomcat-users.xml ./
+	$ docker cp ./tomcat-users.xml playSpring_tomcat_1:/usr/local/tomcat/conf/	
 	$ docker-compose up -d
 	$ docker-compose ps
 	$ docker-compose down
