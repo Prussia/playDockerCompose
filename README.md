@@ -24,6 +24,6 @@
 	$ docker cp ./tomcat-users.xml tomcat:/usr/local/tomcat/conf/	
 	$ docker-compose up -d
 	$ docker-compose ps
+	$ docker-compose down
 	$ docker-compose stop
-	$ docker-compose rm
 	
