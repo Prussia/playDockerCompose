@@ -2,7 +2,7 @@
 
 docker cp ./tomcat-users.xml playspring_tomcat_1:/usr/local/tomcat/conf/
 
-docker cp ./content.xml playspring_tomcat_1:/usr/local/tomcat/conf/
+docker cp ./context.xml playspring_tomcat_1:/usr/local/tomcat/conf/
 
 if test -e "probe.war"; then 
 	echo "prob found"
