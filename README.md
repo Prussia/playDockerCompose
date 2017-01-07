@@ -17,7 +17,11 @@
 
 
 ##**Command**
+	Usage:  docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH|-
+        	docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH
 	
+	$ docker cp tomcat:/usr/local/tomcat/conf/tomcat-users.xml ./
+	$ docker cp ./tomcat-users.xml tomcat:/usr/local/tomcat/conf/	
 	$ docker-compose up -d
 	$ docker-compose ps
 	$ docker-compose stop
