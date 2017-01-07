@@ -34,8 +34,8 @@
     <Valve className="org.apache.catalina.valves.CometConnectionManagerValve" />
     -->
     <Resource name="jdbc/playSpring" auth="Container" type="javax.sql.DataSource"
-         username="yourusername"
-         password="yourpassword"
+         username="playSpring"
+         password="playSpring"
          driverClassName="com.mysql.jdbc.Driver"
          url="jdbc:mysql://54.238.176.106:3400/playSpring?useUnicode=true&characterEncoding=utf8"
          maxTotal="60"
