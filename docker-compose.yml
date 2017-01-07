@@ -4,7 +4,7 @@ services:
   mysql:
     image: mysql:8
     volumes:
-       - /DATA/mysql/db_data:/var/lib/mysql
+       - /DATA/wordpress/mysql/db_data:/var/lib/mysql
     restart: always
     environment:
        MYSQL_ROOT_PASSWORD: wordpress
