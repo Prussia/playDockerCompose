@@ -19,8 +19,8 @@ services:
     ports:
       - "3400:3306"
     environment:
-       MYSQL_ROOT_PASSWORD: blacktea
-       MYSQL_DATABASE: blacktea
-       MYSQL_USER: blacktea
-       MYSQL_PASSWORD: blacktea
+       MYSQL_ROOT_PASSWORD: playSpring
+       MYSQL_DATABASE: playSpring
+       MYSQL_USER: playSpring
+       MYSQL_PASSWORD: playSpring
   
