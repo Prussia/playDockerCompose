@@ -7,7 +7,7 @@ services:
       - "8888:8888"
     restart: always
     environment:
-     - PASSWORD=jin123
+     - PASSWORD=#####
      - SERVER_PORT=8888
      - METHOD=aes-256-cfb
   ss-demo:
@@ -16,6 +16,6 @@ services:
       - "8999:8888"
     restart: always
     environment:
-     - PASSWORD=jin123
+     - PASSWORD=#####
      - SERVER_PORT=8888
      - METHOD=aes-256-cfb
