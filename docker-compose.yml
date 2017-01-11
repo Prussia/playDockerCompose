@@ -1,21 +1,10 @@
 version: '2'
 
 services:
-  ss-demo:
-    image: registry.cn-hangzhou.aliyuncs.com/mrjin/shadowsocks
-    ports:
-      - "8888:8888"
+  ui4docker:
+    image: portainer/portainer
     restart: always
-    environment:
-     - PASSWORD=#####
-     - SERVER_PORT=8888
-     - METHOD=aes-256-cfb
-  ss-demo:
-    image: registry.cn-hangzhou.aliyuncs.com/mrjin/shadowsocks
     ports:
-      - "8999:8888"
-    restart: always
-    environment:
-     - PASSWORD=#####
-     - SERVER_PORT=8888
-     - METHOD=aes-256-cfb
+      - "9000:9000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
