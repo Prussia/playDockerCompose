@@ -14,7 +14,7 @@ services:
       - tomcat
   tomcat:
     image: tomcat:jre8
-    restart: always
+    restart: on-failure:5
     ports:
       - "8280:8080"
     volumes:
@@ -24,10 +24,9 @@ services:
        - redis
   mysql:
     image: mysql:8
-    restart: always
+    restart: on-failure:5
     volumes:
        - /DATA/blacktea/mysql/db_data:/var/lib/mysql
-    restart: always
     ports:
       - "3400:3306"
     environment:
@@ -37,7 +36,7 @@ services:
        MYSQL_PASSWORD: blacktea
   redis:
     image: redis:3
-    restart: always
+    restart: on-failure:5
     ports:
       - "6400:6379"
     volumes:
