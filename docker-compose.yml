@@ -3,7 +3,7 @@ version: '2'
 services:
   ui4docker:
     image: portainer/portainer
-    restart: always
+    restart: on-failure:5
     ports:
       - "9000:9000"
     volumes:
