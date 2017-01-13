@@ -3,7 +3,7 @@ version: '2'
 services:
   tomcat:
     image: tomcat:jre8
-    restart: always
+    restart: on-failure:5
     ports:
       - "8180:8080"
     volumes:
