@@ -30,3 +30,7 @@ services:
     ports:
       - "3500:27017"
     command: --auth
+    environment:
+      MONGODB_USER: playSpring
+      MONGODB_DATABASE: playSpring
+      MONGODB_PASS: playSpring
