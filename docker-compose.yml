@@ -22,3 +22,11 @@ services:
        MYSQL_DATABASE: playSpring
        MYSQL_USER: playSpring
        MYSQL_PASSWORD: playSpring
+  mongodb:
+    image: mongo:3.2
+    restart: on on-failure:5
+    volumes: 
+      - /DATA/playSpring/mongodb/db:/data/db
+    ports:
+      - "3500:27017"
+    command: --auth
