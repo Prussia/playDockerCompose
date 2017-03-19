@@ -1,5 +1,13 @@
 # playDockerCompose
-
+### the containers
+	- tomcat
+	- mysql
+	- mongodb 
+		- 【the way to access to it
+		
+		```
+		$ docker run --name some-mongo -d mongo --auth
+		```
 
 #**[Install Docker Compose](https://docs.docker.com/compose/install/)**
 
