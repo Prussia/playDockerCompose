@@ -34,7 +34,7 @@ services:
       MONGODB_USER: playSpring
       MONGODB_DATABASE: playSpring
       MONGODB_PASS: playSpring
-   redis:
+  redis:
     image: redis:3
     restart: on-failure:5
     ports:
